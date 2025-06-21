@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Formpage {
+public class FormPage {
 	WebDriver driver;
-	public Formpage(WebDriver driver) {
+	public FormPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver,this);
 	}
@@ -26,4 +26,12 @@ public class Formpage {
 	@FindBy(xpath="//input[@id='apps']")
 	WebElement apps;
 	
+	@FindBy(xpath="//button[@id='measureBtn']")
+	WebElement submit;
+	
+	@FindBy(xpath="//div[@id='result']")
+	WebElement result;
+	
+	@FindBy(xpath="//div[@id='result']/h2")
+	WebElement resultName;
 }
