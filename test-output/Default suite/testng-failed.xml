@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.regression.ValidationTest">
+      <class name="com.test.smoke.HomeTest">
         <methods>
-          <include name="websiteValidation"/>
-          <include name="appsValidation"/>
           <include name="exit"/>
-          <include name="skillValidation"/>
-          <include name="nameValidation"/>
+          <include name="dropDownVisibleTest"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- com.test.regression.ValidationTest -->
+      </class> <!-- com.test.smoke.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
